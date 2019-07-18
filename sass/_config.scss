@@ -1,0 +1,11 @@
+body {
+  font-family: $body-font;
+  font-size: 18px;
+}
+
+h1, h2, h3, button, .menu__link {
+  font-family: $items-font;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+}

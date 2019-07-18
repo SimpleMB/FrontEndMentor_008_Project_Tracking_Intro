@@ -11,6 +11,11 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Barlow|Barlow+Condensed:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
 
     <title>Frontend Mentor | Project tracking intro component</title>
 
@@ -27,12 +32,50 @@
   </head>
   <body>
     <div class="wrapper">
+      <div src="" alt="" class="wrapper__background"></div>
       <header class="header">
         <section class="logo header__logo">
           <img class="logo__image" src="./images/logo.svg" alt="company logo" />
         </section>
-        <nav class="menu header__menu">
-          <ul class="menu__list">
+        <nav class="header__menu menu">
+          <div class="menu__hamburger hamburger">
+            <input
+              type="checkbox"
+              class="menu__checkbox"
+              name="hamburger"
+              id="hamburger"
+            />
+            <label for="hamburger" class="hamburger__icon">
+              <img
+                src="./images/baseline-menu-24px.svg"
+                alt="open menu"
+                class="hamburger__image--menu"
+              />
+              <img
+                src="./images/baseline-clear-24px.svg"
+                alt="close menu"
+                class="hamburger__image--close"
+              />
+            </label>
+            <ul class="menu__list menu__list--mobile">
+              <li class="menu__item menu__item--mobile">
+                <a href="" class="menu__link menu__link--mobile">Product</a>
+              </li>
+              <li class="menu__item menu__item--mobile">
+                <a href="" class="menu__link menu__link--mobile">Features</a>
+              </li>
+              <li class="menu__item menu__item--mobile">
+                <a href="" class="menu__link menu__link--mobile">Pricing</a>
+              </li>
+              <li class="menu__item menu__item--mobile">
+                <div class="menu__spacer"></div>
+              </li>
+              <li class="menu__item menu__item--mobile">
+                <a href="" class="menu__link menu__link--mobile">Login</a>
+              </li>
+            </ul>
+          </div>
+          <ul class="menu__list menu__list--desktop">
             <li class="menu__item">
               <a href="" class="menu__link">Product</a>
             </li>
@@ -43,7 +86,9 @@
               <a href="" class="menu__link">Pricing</a>
             </li>
             <li class="menu__item">
-              <div class="menu__spacer">*</div>
+              <img src="./images/round-24px.svg" alt="" class="menu__spacer menu__spacer--desktop">
+            </li>
+            <li class="menu__item">
               <a href="" class="menu__link">Login</a>
             </li>
           </ul>
@@ -57,15 +102,21 @@
               Monograph Dashboard
             </h3>
             <h1 class="hero__title">Powerful insights into your team</h1>
-            <h3 class="hero__description">
+            <p class="hero__description">
               Project planning and time tracking for agile teams
-            </h3>
+            </p>
             <p class="hero__call-to-action">
               <button class="hero__btn">Schedule a demo</button>
-              <hero__btn-info></hero__btn-info>
+              <span class="hero__btn-info">to see a preview</span>
             </p>
           </section>
-          <section class="hero__image">to see a preview</section>
+          <section class="hero__image">
+            <img
+              src="./images/illustration-devices.svg"
+              alt=""
+              class="hero__img"
+            />
+          </section>
         </section>
       </main>
       <footer>
