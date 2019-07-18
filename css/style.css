@@ -152,9 +152,13 @@ h1, h2, h3, button, .menu__link {
   .menu__list .menu__item .menu__link {
     padding: 10px 10px;
     border-radius: 50px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
   .menu__list .menu__item .menu__link:hover {
+    text-decoration: underline;
     background-color: white;
+    cursor: pointer;
   }
 }
 
@@ -346,6 +350,13 @@ h1, h2, h3, button, .menu__link {
   border-radius: 5px;
   border: none;
   background-color: #ff5c5c;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.hero__text .hero__call-to-action .hero__btn:hover {
+  opacity: 0.7;
+  cursor: pointer;
 }
 
 .hero__text .hero__call-to-action .hero__btn-info {
